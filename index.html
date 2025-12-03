@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fitness Club</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background: linear-gradient(135deg, #ff9a9e, #fad0c4, #fbc2eb, #a6c1ee);
+      color: #333;
+    }
+
+    header {
+      background: rgba(0,0,0,0.8);
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      letter-spacing: 2px;
+    }
+
+    nav {
+      margin-top: 10px;
+    }
+
+    nav a {
+      color: #fff;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #ffeb3b;
+    }
+
+    section {
+      padding: 40px;
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #ee0979;
+    }
+
+    /* Class Schedule */
+    .schedule {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .class {
+      background: #fff;
+      border-radius: 10px;
+      padding: 20px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+      transition: transform 0.3s;
+    }
+
+    .class:hover {
+      transform: scale(1.05);
+    }
+
+    /* Trainers */
+    .trainers {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .trainer {
+      background: linear-gradient(135deg, #a6c1ee, #fbc2eb);
+      border-radius: 10px;
+      padding: 20px;
+      text-align: center;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+      transition: transform 0.3s;
+    }
+
+    .trainer:hover {
+      transform: translateY(-5px);
+    }
+
+    .trainer img {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      margin-bottom: 10px;
+    }
+
+    /* Membership Plans */
+    .plans {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    .plan {
+      background: #fff;
+      border-radius: 10px;
+      padding: 20px;
+      width: 250px;
+      text-align: center;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+      transition: transform 0.3s;
+    }
+
+    .plan:hover {
+      transform: scale(1.05);
+    }
+
+    .plan h3 {
+      margin-bottom: 10px;
+      color: #ff6a00;
+    }
+
+    .plan p {
+      margin-bottom: 10px;
+    }
+
+    .plan button {
+      padding: 10px 15px;
+      border: none;
+      border-radius: 5px;
+      background: linear-gradient(90deg, #ff6a00, #ee0979);
+      color: #fff;
+      font-weight: bold;
+      cursor: pointer;
+      transition: opacity 0.3s;
+    }
+
+    .plan button:hover {
+      opacity: 0.8;
+    }
+
+    /* Blog */
+    .blog {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+    }
+
+    .post {
+      background: #fff;
+      border-radius: 10px;
+      padding: 20px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+      transition: transform 0.3s;
+    }
+
+    .post:hover {
+      transform: scale(1.05);
+    }
+
+    .post h3 {
+      margin-bottom: 10px;
+      color: #ee0979;
+    }
+
+    footer {
+      background: rgba(0,0,0,0.8);
+      color: #fff;
+      text-align: center;
+      padding: 15px;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Fitness Club</h1>
+    <nav>
+      <a href="#schedule">Class Schedule</a>
+      <a href="#trainers">Trainers</a>
+      <a href="#plans">Membership Plans</a>
+      <a href="#blog">Fitness Blog</a>
+    </nav>
+  </header>
+
+  <section id="schedule">
+    <h2>Class Schedule</h2>
+    <div class="schedule">
+      <div class="class">
+        <h3>Yoga</h3>
+        <p>Mon, Wed, Fri - 7 AM</p>
+      </div>
+      <div class="class">
+        <h3>HIIT</h3>
+        <p>Tue, Thu - 6 PM</p>
+      </div>
+      <div class="class">
+        <h3>Zumba</h3>
+        <p>Sat - 10 AM</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="trainers">
+    <h2>Meet Our Trainers</h2>
+    <div class="trainers">
+      <div class="trainer">
+        <img src="https://picsum.photos/100?random=1" alt="Trainer">
+        <h3>Alex Johnson</h3>
+        <p>Yoga Specialist</p>
+      </div>
+      <div class="trainer">
+        <img src="https://picsum.photos/100?random=2" alt="Trainer">
+        <h3>Sophia Lee</h3>
+        <p>HIIT Coach</p>
+      </div>
+      <div class="trainer">
+        <img src="https://picsum.photos/100?random=3" alt="Trainer">
+        <h3>Michael Smith</h3>
+        <p>Zumba Instructor</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="plans">
+    <h2>Membership Plans</h2>
+    <div class="plans">
+      <div class="plan">
+        <h3>Basic</h3>
+        <p>Access to gym</p>
+        <p>$20/month</p>
+        <button>Join Now</button>
+      </div>
+      <div class="plan">
+        <h3>Standard</h3>
+        <p>Gym + Classes</p>
+        <p>$40/month</p>
+        <button>Join Now</button>
+      </div>
+      <div class="plan">
+        <h3>Premium</h3>
+        <p>All Access + Personal Trainer</p>
+        <p>$70/month</p>
+        <button>Join Now</button>
+      </div>
+    </div>
+  </section>
+
+  <section id="blog">
+    <h2>Fitness Blog</h2>
+    <div class="blog">
+      <div class="post">
+        <h3>5 Tips for Morning Workouts</h3>
+        <p>Start your day with energy and focus by following these simple tips...</p>
+      </div>
+      <div class="post">
+        <h3>Healthy Eating for Gym Lovers</h3>
+        <p>Nutrition plays a key role in fitness. Here’s how to balance your meals...</p>
+      </div>
+      <div class="post">
+        <h3>Why Rest Days Matter</h3>
+        <p>Rest is just as important as training. Learn how to recover effectively...</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Fitness Club | Designed with ❤️</p>
+  </footer>
+
+</body>
+</html>
